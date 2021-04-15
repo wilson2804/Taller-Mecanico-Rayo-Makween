@@ -159,6 +159,11 @@ center {
     .logo {
         height: auto;
     }
+    .imgdetalle1 {
+        height: 170px;
+        display: block;
+        margin: auto;
+    }
 }
 
 
@@ -167,6 +172,11 @@ center {
 @media only screen and (min-width: 600px) {
     .logo {
         height: 150px;
+    }
+    .imgdetalle1 {
+        height: 170px;
+        display: block;
+        margin: auto;
     }
 }
 
@@ -177,6 +187,11 @@ center {
     .logo {
         height: 150px;
     }
+    .imgdetalle1 {
+        height: auto;
+        display: block;
+        margin: auto;
+    }
 }
 
 
@@ -186,6 +201,9 @@ center {
     .logo {
         height: 100px;
     }
+    .tabladetalle {
+        margin-top: 10px;
+    }
 }
 
 
@@ -194,5 +212,8 @@ center {
 @media only screen and (min-width: 1200px) {
     .logo {
         height: 100px;
+    }
+    .tabladetalle {
+        margin-top: 18px;
     }
 }
