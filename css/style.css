@@ -1,3 +1,13 @@
+.img-adj {
+    display: block;
+    margin: auto;
+      
+}
+
+.full{
+    height: 100%;
+    width: 100%;
+}
 .carousel {
     margin-bottom: 1rem;
 }
