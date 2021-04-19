@@ -186,6 +186,15 @@ center {
     height: 32rem;
 }
 
+.auto {
+    width: 400px;
+}
+
+.suv {
+    width: 400px;
+    height: 265px;
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 
