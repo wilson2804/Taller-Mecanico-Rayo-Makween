@@ -11,7 +11,7 @@
     <link href="css/registro.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
+<body class="fondo">
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <div class="container-fluid">
@@ -38,7 +38,7 @@
                     class="dropdown-menu text-small"
                     aria-labelledby="dropdownUser1"
                   >
-                    <li><a class="dropdown-item" href="#">Categoria</a></li>
+                    <li><a class="dropdown-item" href="categorias.html">Categoria</a></li>
                         <li><a class="dropdown-item" href="mecanico.html">Mecanico</a></li>
                     </ul>
                     </div>
@@ -53,40 +53,42 @@
                     </form>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a href="#" class="nav-link">Ingresar</a></li>
+                        <li class="nav-item"><a href="login.html" class="nav-link">Ingresar</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-
+    <br>
     <main class="form-signin text-center">
+        <div class="login-container" style="background-color: #fff;">
+            <form class="formularioRegistro">
 
-        <form class="formularioRegistro">
+                <h1 class="h3 mb-3 fw-normal">Registro de nuevo cliente</h1>
 
-            <h1 class="h3 mb-3 fw-normal">Registro de nuevo cliente</h1>
-
-            <div class="form-floating">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Correo Electronico</label>
-            </div>
-            <br>
-            <div class="form-floating">
-                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Nombre y Apellido</label>
-            </div>
-            <br>
-            <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Clave</label>
-            </div>
-            <div class="checkbox mb-3">
-                <label>
+                <div class="form-floating">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Correo Electronico</label>
+                </div>
+                <br>
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Nombre y Apellido</label>
+                </div>
+                <br>
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Clave</label>
+                </div>
+                <div class="checkbox mb-3">
+                    <label>
                   <input type="checkbox"> Aceptar los <a href="#">Terminos y condiciones</a>
                 </label>
-            </div>
-            <button class="w-100 btn btn-lg btn-primary" type="submit">Registrarse</button>
-        </form>
+                </div>
+                <button class="w-100 btn btn-lg btn-primary maincolor"><a href="vistaUsuario.html" style="color:#fff">Registrarse</a></button>
+
+            </form>
+        </div>
     </main>
 </body>
 

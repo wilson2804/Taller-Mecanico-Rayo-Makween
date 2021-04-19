@@ -217,6 +217,9 @@ center {
         margin-top: 270px;
         margin-bottom: -260px;
     }
+    .bloqueCategoria {
+        text-align: center;
+    }
 }
 
 
@@ -240,6 +243,9 @@ center {
     .alertaLogin {
         margin-top: 200px;
         margin-bottom: -190px;
+    }
+    .bloqueCategoria {
+        text-align: center;
     }
 }
 
@@ -265,6 +271,9 @@ center {
         margin-top: 200px;
         margin-bottom: -190px;
     }
+    .bloqueCategoria {
+        text-align: center;
+    }
 }
 
 
@@ -286,6 +295,9 @@ center {
     .alertaLogin {
         margin-top: 150px;
         margin-bottom: -140px;
+    }
+    .bloqueCategoria {
+        text-align: center;
     }
 }
 
@@ -311,6 +323,9 @@ center {
     }
     .adjlog {
         padding-top: 150px
+    }
+    .bloqueCategoria {
+        text-align: center;
     }
 }
 
