@@ -144,6 +144,30 @@ center {
     height: 32rem;
 }
 
+.item1 {
+    background-image: url("https://l1-cms-2.images.lexus-europe.com/lexusone/lexesesv11/tyres-hero-1920x1080_tcm-3153-1323236.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-position: center;*/
+    opacity: 75%;
+}
+
+.item2 {
+    background-image: url("https://l1-cms-1.images.lexus-europe.com/lexusone/lexesesv11/car-service-key-features-A-1920x1080_tcm-3153-1323224.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-position: center;*/
+    opacity: 75%;
+}
+
+.item3 {
+    background-image: url("https://l1-cms-4.images.lexus-europe.com/lexusone/lexesesv11/Oil-Change-hero-1920x1080_tcm-3153-1323245.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-position: center;*/
+    opacity: 75%;
+}
+
 .carousel-item>img {
     position: absolute;
     top: 0;
