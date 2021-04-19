@@ -1,13 +1,13 @@
 .img-adj {
     display: block;
     margin: auto;
-      
 }
 
-.full{
+.full {
     height: 100%;
     width: 100%;
 }
+
 .carousel {
     margin-bottom: 1rem;
 }
@@ -198,6 +198,16 @@ center {
         display: block;
         margin: auto;
     }
+    .formularioRegistro {
+        margin-top: 200px;
+    }
+    .mantenciones {
+        margin-top: 270px;
+    }
+    .alertaLogin {
+        margin-top: 270px;
+        margin-bottom: -260px;
+    }
 }
 
 
@@ -211,6 +221,16 @@ center {
         height: 170px;
         display: block;
         margin: auto;
+    }
+    .formularioRegistro {
+        margin-top: 100px;
+    }
+    .mantenciones {
+        margin-top: 200px;
+    }
+    .alertaLogin {
+        margin-top: 200px;
+        margin-bottom: -190px;
     }
 }
 
@@ -226,6 +246,16 @@ center {
         display: block;
         margin: auto;
     }
+    .formularioRegistro {
+        margin-top: 100px;
+    }
+    .mantenciones {
+        margin-top: 200px;
+    }
+    .alertaLogin {
+        margin-top: 200px;
+        margin-bottom: -190px;
+    }
 }
 
 
@@ -238,6 +268,16 @@ center {
     .tabladetalle {
         margin-top: 10px;
     }
+    .formularioRegistro {
+        margin-top: auto;
+    }
+    .mantenciones {
+        margin-top: 150px;
+    }
+    .alertaLogin {
+        margin-top: 150px;
+        margin-bottom: -140px;
+    }
 }
 
 
@@ -248,6 +288,16 @@ center {
         height: 100px;
     }
     .tabladetalle {
-        margin-top: 18px;
+        margin-top: auto;
+    }
+    .formularioRegistro {
+        margin-top: auto;
+    }
+    .mantenciones {
+        margin-top: 150px;
+    }
+    .alertaLogin {
+        margin-top: 150px;
+        margin-bottom: -140px;
     }
 }
