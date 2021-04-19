@@ -174,6 +174,9 @@ center {
         display: block;
         margin: auto;
     }
+    .adjlog{
+        padding-top: 300px;
+    }
 }
 
 
@@ -187,6 +190,9 @@ center {
         height: 170px;
         display: block;
         margin: auto;
+    }
+    .adjlog{
+        padding-top:250px
     }
 }
 
@@ -202,6 +208,9 @@ center {
         display: block;
         margin: auto;
     }
+    .adjlog{
+        padding-top:200px
+    }
 }
 
 
@@ -213,6 +222,9 @@ center {
     }
     .tabladetalle {
         margin-top: 10px;
+    }
+    .adjlog{
+        padding-top:200px
     }
 }
 
@@ -226,4 +238,68 @@ center {
     .tabladetalle {
         margin-top: 18px;
     }
+    .adjlog{
+        padding-top:150px
+    }
+}
+
+/*login*/
+.login-container{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.login-form-1{
+    padding: 5%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-1 h3{
+    text-align: center;
+    color: #333;
+}
+
+.login-container form{
+    padding: 10%;
+}
+.btnSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+}
+.login-form-1 .btnSubmit{
+    font-weight: 600;
+    color: #fff;
+    background-color: #212529;
+}
+
+
+.login-form-1 .ForgetPwd{
+    color: #0062cc;
+    font-weight: 600;
+    text-decoration: none;
+    color:#212529;
+}
+.loginpadding{
+    padding: 5px;
+}
+.back-adj{
+    display: block;
+    margin: auto;
+    width: 60%;
+    background-color: white!important
+
+}
+.fondo{
+    background-image: url('https://static8.depositphotos.com/1141099/799/i/600/depositphotos_7990452-stock-photo-automotive-engine.jpg');
+    background-color: rgb(109, 109, 109);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+    }
+.maincolor{
+    background-color: #212529;
+    color: white;
 }
