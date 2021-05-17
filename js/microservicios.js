@@ -102,6 +102,12 @@ function rechazarPublicacion() {
 
 }
 
+function registrar() {
+    if ($('#correo').val() !== "" && $('#nombre').val() !== "" && $('#pass').val() !== "" && $('#check').is(':checked')) { $('#exampleModalRechazo').modal('show'); }
+
+
+}
+
 function contacto() {
     $('#exampleModal').modal('show');
 
@@ -109,67 +115,67 @@ function contacto() {
 
 function recuperar() {
     let x = $('#correoelec').val();
-    if(x !== ""){
+    if (x !== "") {
         $('#exampleModal').modal('show');
 
-   
+
 
         $('#correoamostar').html(x);
-   
+
     }
-    }
-
-    
-   
+}
 
 
 
-function verificacionlogin(){
-$("#formlogin").submit(function(event){
-    event.preventDefault();
-    const url = "http://34.70.86.84:3000/users/listar-usuarios";
-    $.get(url, function(data){
-       $.each(data, function(index,user){
-           if (user.Correo === $("#correo").val() && user.Clave === $("#clave").val()){
-               console.log("coincide");
-               switch(user.Tipo_Usuario){
-                   case "Administrador":
-                   $(location).attr('href', 'vistaAdmin.html');
-                   break;
-                   case "Mecanico":
-                   $(location).attr('href', 'registroactividades.html');
-                   break;
-                   case "Cliente":
-                   $(location).attr('href', 'vistaUsuario.html');
-                   break;
 
-                   
-                   
-               } 
 
-               
-           }
-       }) 
-       
+
+function verificacionlogin() {
+    $("#formlogin").submit(function(event) {
+        event.preventDefault();
+        const url = "http://34.70.86.84:3000/users/listar-usuarios";
+        $.get(url, function(data) {
+            $.each(data, function(index, user) {
+                if (user.Correo === $("#correo").val() && user.Clave === $("#clave").val()) {
+                    console.log("coincide");
+                    switch (user.Tipo_Usuario) {
+                        case "Administrador":
+                            $(location).attr('href', 'vistaAdmin.html');
+                            break;
+                        case "Mecanico":
+                            $(location).attr('href', 'registroactividades.html');
+                            break;
+                        case "Cliente":
+                            $(location).attr('href', 'vistaUsuario.html');
+                            break;
+
+
+
+                    }
+
+
+                }
+            })
+
+        })
+
     })
-
-})
 }
 
 (function() {
     'use strict';
     window.addEventListener('load', function() {
-      // Fetch all the forms we want to apply custom Bootstrap validation styles to
-      var forms = document.getElementsByClassName('needs-validation');
-      // Loop over them and prevent submission
-      var validation = Array.prototype.filter.call(forms, function(form) {
-        form.addEventListener('submit', function(event) {
-          if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-          }
-          form.classList.add('was-validated');
-        }, false);
-      });
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+        });
     }, false);
-  })();
+})();
