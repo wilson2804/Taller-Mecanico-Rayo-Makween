@@ -229,7 +229,8 @@ center {
         padding-bottom: 40%;
     }
 }
-  
+
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
 @media only screen and (min-width: 600px) {
@@ -348,16 +349,12 @@ center {
         text-align: center;
     }
     .login-container {
-        margin-top: 0px;
-      
+        margin-top: 70px;
     }
-    
 }
 
 
 /*login*/
-
-
 
 .login-form-1 {
     padding: 5%;

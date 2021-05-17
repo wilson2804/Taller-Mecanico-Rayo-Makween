@@ -102,7 +102,12 @@ function rechazarPublicacion() {
 }
 
 function registrar() {
-    if ($('#correo').val() !== "" && $('#nombre').val() !== "" && $('#pass').val() !== "" && $('#check').is(':checked')) { $('#exampleModalRechazo').modal('show'); }
+
+    if ($('#correo').val() !== "" && $('#nombre').val() !== "" && $('#pass').val() !== "" && $('#check').is(':checked')) {
+        if (validateEmail($('#correo').val())) {
+            $('#exampleModalRechazo').modal('show');
+        }
+    }
 
 
 }
