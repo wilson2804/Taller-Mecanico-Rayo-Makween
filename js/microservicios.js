@@ -89,6 +89,9 @@ function listarMantencionesAdmin() {
     document.getElementById("btnTraer").click();
 }
 
+
+
+
 function rechazarPublicacion() {
 
     $("#closeModal").click();
@@ -179,3 +182,79 @@ function verificacionlogin() {
         });
     }, false);
 })();
+
+
+function listarDetalleTrabajo() {
+    $("#btnTraer").click(() => {
+        $("#body_detalle").html("");
+        const url = "http://34.70.86.84:3000/users/listar-mantenciones";
+        $.get(url, (respuesta) => {
+            let mantenciones = respuesta;
+
+
+            $.each(mantenciones, (index, item) => {
+                let Trabajo = item.Trabajo;
+                let Mecanico = item.Mecanico;
+                let Fecha = item.Fecha;
+                let Materiales = item.Materiales;
+                let Img = item.Img;
+
+
+
+
+                $("#body_detalle").append(
+
+                    "<div class='card-header'>" +
+                    Trabajo +
+                    "</div>" +
+                    "<div class='row'>" +
+                    "<div class='col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12'>" +
+
+                    "<div class='card'>" +
+                    "<div class='card-body'>" +
+                    "<img src='img/" + Img + "' class='img-fluid imgdetalle1' alt='Responsive image'>" +
+
+                    "</div>" +
+                    "</div>" +
+                    "</div>" +
+                    "<div class='col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12' >" +
+                    "<div class='card tabladetalle' style ='position: relative'>" +
+                    "<div class='card-body'>" +
+
+                    "<table class='table table-responsive' >" +
+
+                    "<tr>" +
+                    "<th>Trabajo</th>" +
+                    "<td>" + Trabajo + "</td>" +
+                    "</tr>" +
+                    "<tr>" +
+                    "<th>Mecanico</th>" +
+                    "<td>" + Mecanico + "</td>" +
+                    "</tr>" +
+                    "<tr>" +
+                    "<th>Fecha</th>" +
+                    "<td>" + Fecha + "</td>" +
+                    "</tr>" +
+                    "<tr>" +
+                    "<th>Materiales</th>" +
+                    "<td>" + Materiales + "</td>" +
+                    "</tr>" +
+
+                    "</table>" +
+
+                    "</div>" +
+                    "</div>" +
+                    "</div>" +
+                    "</div>" +
+                    "<div class='card-footer text-muted'>" +
+                    "3 dias atras." +
+                    "</div>" +
+                    "</div>" +
+                    "<br>");
+
+
+            })
+        });
+    });
+    document.getElementById("btnTraer").click();
+}
