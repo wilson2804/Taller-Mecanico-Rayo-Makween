@@ -98,6 +98,11 @@ function rechazarPublicacion() {
     $("#closeModal").click();
     setTimeout(function() {
         $('#exampleModalRechazo').modal('show')
-    }, 1000);
+    }, 500);
+
+}
+
+function contacto() {
+    $('#exampleModal').modal('show');
 
 }

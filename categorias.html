@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Taller Mecanico Rayo Makween</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -15,33 +15,30 @@
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><img class="img-fluid logo" src="https://cdn.niviweb.com/images/coches/logo-taller-1.png"> </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="index.html">Inicio</a>
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="detalleTrabajo.html">Mantenciones</a>
                         </li>
-                        <li class="nav-item">
-                            <div class="dropdown text-end">
-                                <a href="#" class="active nav-link d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">Atenciones</a>
-                                <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
-                                    <li>
-                                        <a class="active dropdown-item" href="categorias.html">Categoria</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="mecanico.html">Mecanico</a></li>
-                                </ul>
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Atenciones</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown01">
+                                <a class="dropdown-item active" href="categorias.html">Categoria</a>
+                                <a class="dropdown-item" href="mecanico.html">Mecanico</a>
+
                             </div>
                         </li>
                     </ul>
                     <form class="d-flex">
-                        <input class="form-control me-4" type="search" placeholder="Buscar por Mecanico, Categoria o Palabra Clave" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        <input class="form-control" type="search" placeholder="Buscar por Mecanico, Categoria o Palabra Clave" aria-label="Search">
+                        <button class="btn btn-outline-success offset-1" type="submit">Buscar</button>
                     </form>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <ul class="navbar-nav">
@@ -51,82 +48,58 @@
             </div>
         </nav>
     </header>
-    <br>
-    <br>
+    <br />
+    <br />
     <main>
-        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active item1">
                     <div class="container">
-                        <div class="carousel-caption text-start">
+                        <div class="carousel-caption text-left">
                             <h1>Example headline.</h1>
-                            <p>
-                                Some representative placeholder content for the first slide of the carousel.
-                            </p>
-                            <p>
-                                <a class="btn btn-lg btn-primary" href="detalleTrabajo.html">Sign up today</a
-                  >
-                </p>
-              </div>
+                            <p>Some representative placeholder content for the first slide of the carousel.</p>
+                            <p><a class="btn btn-lg btn-primary" href="detalleTrabajo.html">Sign up today</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item item2">
+
+
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Another example headline.</h1>
+                            <p>Some representative placeholder content for the second slide of the carousel.</p>
+                            <p><a class="btn btn-lg btn-primary" href="detalleTrabajo.html">Learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item item3">
+
+
+                    <div class="container">
+                        <div class="carousel-caption text-right">
+                            <h1>One more for good measure.</h1>
+                            <p>Some representative placeholder content for the third slide of this carousel.</p>
+                            <p><a class="btn btn-lg btn-primary" href="detalleTrabajo.html">Browse gallery</a></p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="carousel-item item2">
-            <div class="container col-">
-              <div class="carousel-caption">
-                <h1>Another example headline.</h1>
-                <p>
-                  Some representative placeholder content for the second slide
-                  of the carousel.
-                </p>
-                <p>
-                  <a class="btn btn-lg btn-primary" href="detalleTrabajo.html"
-                    >Learn more</a
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item item3">
-            <div class="container">
-              <div class="carousel-caption text-end">
-                <h1>One more for good measure.</h1>
-                <p>
-                  Some representative placeholder content for the third slide of
-                  this carousel.
-                </p>
-                <p>
-                  <a class="btn btn-lg btn-primary" href="detalleTrabajo.html"
-                    >Browse gallery</a
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+
     </main>
 
     <!-- Categorias -->
@@ -196,8 +169,9 @@
 
 
 
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js " integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf " crossorigin="anonymous "></script>
+
 
 </html>
