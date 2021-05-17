@@ -1,3 +1,13 @@
+.img-adj {
+    display: block;
+    margin: auto;
+}
+
+.full {
+    height: 100%;
+    width: 100%;
+}
+
 .carousel {
     margin-bottom: 1rem;
 }
@@ -144,12 +154,45 @@ center {
     height: 32rem;
 }
 
+.item1 {
+    background-image: url("https://l1-cms-2.images.lexus-europe.com/lexusone/lexesesv11/tyres-hero-1920x1080_tcm-3153-1323236.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-position: center;*/
+    opacity: 75%;
+}
+
+.item2 {
+    background-image: url("https://l1-cms-1.images.lexus-europe.com/lexusone/lexesesv11/car-service-key-features-A-1920x1080_tcm-3153-1323224.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-position: center;*/
+    opacity: 75%;
+}
+
+.item3 {
+    background-image: url("https://l1-cms-4.images.lexus-europe.com/lexusone/lexesesv11/Oil-Change-hero-1920x1080_tcm-3153-1323245.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-position: center;*/
+    opacity: 75%;
+}
+
 .carousel-item>img {
     position: absolute;
     top: 0;
     left: 0;
     min-width: 100%;
     height: 32rem;
+}
+
+.auto {
+    width: 400px;
+}
+
+.suv {
+    width: 400px;
+    height: 265px;
 }
 
 
@@ -163,6 +206,19 @@ center {
         height: 170px;
         display: block;
         margin: auto;
+    }
+    .formularioRegistro {
+        margin-top: 200px;
+    }
+    .mantenciones {
+        margin-top: 270px;
+    }
+    .alertaLogin {
+        margin-top: 270px;
+        margin-bottom: -260px;
+    }
+    .bloqueCategoria {
+        text-align: center;
     }
 }
 
@@ -178,6 +234,19 @@ center {
         display: block;
         margin: auto;
     }
+    .formularioRegistro {
+        margin-top: 100px;
+    }
+    .mantenciones {
+        margin-top: 200px;
+    }
+    .alertaLogin {
+        margin-top: 200px;
+        margin-bottom: -190px;
+    }
+    .bloqueCategoria {
+        text-align: center;
+    }
 }
 
 
@@ -192,6 +261,19 @@ center {
         display: block;
         margin: auto;
     }
+    .formularioRegistro {
+        margin-top: 100px;
+    }
+    .mantenciones {
+        margin-top: 200px;
+    }
+    .alertaLogin {
+        margin-top: 200px;
+        margin-bottom: -190px;
+    }
+    .bloqueCategoria {
+        text-align: center;
+    }
 }
 
 
@@ -204,6 +286,19 @@ center {
     .tabladetalle {
         margin-top: 10px;
     }
+    .formularioRegistro {
+        margin-top: auto;
+    }
+    .mantenciones {
+        margin-top: 150px;
+    }
+    .alertaLogin {
+        margin-top: 150px;
+        margin-bottom: -140px;
+    }
+    .bloqueCategoria {
+        text-align: center;
+    }
 }
 
 
@@ -214,6 +309,90 @@ center {
         height: 100px;
     }
     .tabladetalle {
-        margin-top: 18px;
+        margin-top: auto;
     }
+    .formularioRegistro {
+        margin-top: auto;
+    }
+    .mantenciones {
+        margin-top: 150px;
+    }
+    .alertaLogin {
+        margin-top: 150px;
+        margin-bottom: -140px;
+    }
+    .adjlog {
+        padding-top: 150px
+    }
+    .bloqueCategoria {
+        text-align: center;
+    }
+}
+
+
+/*login*/
+
+.login-container {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.login-form-1 {
+    padding: 5%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+
+.login-form-1 h3 {
+    text-align: center;
+    color: #333;
+}
+
+.login-container form {
+    padding: 10%;
+}
+
+.btnSubmit {
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+}
+
+.login-form-1 .btnSubmit {
+    font-weight: 600;
+    color: #fff;
+    background-color: #212529;
+}
+
+.login-form-1 .ForgetPwd {
+    color: #0062cc;
+    font-weight: 600;
+    text-decoration: none;
+    color: #212529;
+}
+
+.loginpadding {
+    padding: 5px;
+}
+
+.back-adj {
+    display: block;
+    margin: auto;
+    width: 60%;
+    background-color: white!important
+}
+
+.fondo {
+    background-image: url('https://static8.depositphotos.com/1141099/799/i/600/depositphotos_7990452-stock-photo-automotive-engine.jpg');
+    background-color: rgb(109, 109, 109);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+}
+
+.maincolor {
+    background-color: #212529;
+    color: white;
 }
