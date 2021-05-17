@@ -9,7 +9,9 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <script src="js/microservicios.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
 </head>
 <body class="fondo" onload="verificacionlogin()">
     <header>
@@ -67,7 +69,7 @@
                     <div class="form-group loginpadding" >
                         <input type="email" class="form-control" id="correo" placeholder="correo electrónico *" required />
                         <div class="invalid-feedback">
-                            ingresar email correcto
+                            ingrese un email valido
                           </div>
                     </div>
                     <div class="form-group loginpadding">
@@ -90,12 +92,27 @@
         
     </div>
 </main>
+<div class="modal fade" id="exampleModalError" data-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                    Error
+                </h5>
+                <button type="button" onclick="window.location.reload();" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+            </div>
+            <div class="modal-body">
+                correo y&#47o clave incorrecta
+            </div>
+        </div>
+    </div>
+</div>
 
 <!--   SCRIPTS LOADER -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
-
+<script src="js/microservicios.js"></script>
     
     
 

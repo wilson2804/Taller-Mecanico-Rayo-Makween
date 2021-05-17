@@ -107,17 +107,29 @@ function contacto() {
 
 }
 
-function recuperar() {
+function recuperar(event) {
+    event.preventDefault();
     let x = $('#correoelec').val();
     if(x !== ""){
-        $('#exampleModal').modal('show');
-
-   
-
-        $('#correoamostar').html(x);
-   
+        if(validateEmail(x)){
+            $('#exampleModal').modal('show');
+            $('#correoamostar').html(x);   
+        }        
     }
-    }
+}
+
+$(document).ready(function() {
+    $('#formrecuperate').submit(recuperar);
+})
+
+function validateEmail(email) {
+    //Expresio regular para validar email
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
+function contacto() {
+    
+}
 
     
    
@@ -130,25 +142,33 @@ $("#formlogin").submit(function(event){
     const url = "http://34.70.86.84:3000/users/listar-usuarios";
     $.get(url, function(data){
        $.each(data, function(index,user){
-           if (user.Correo === $("#correo").val() && user.Clave === $("#clave").val()){
-               console.log("coincide");
-               switch(user.Tipo_Usuario){
-                   case "Administrador":
-                   $(location).attr('href', 'vistaAdmin.html');
-                   break;
-                   case "Mecanico":
-                   $(location).attr('href', 'registroactividades.html');
-                   break;
-                   case "Cliente":
-                   $(location).attr('href', 'vistaUsuario.html');
-                   break;
+           if ($("#correo").val() != ""  || $("#clave").val() != "" ){
+
+            if (user.Correo == $("#correo").val() && user.Clave == $("#clave").val()){
+                console.log("coincide");
+                switch(user.Tipo_Usuario){
+                    case "Administrador":
+                    $(location).attr('href', 'vistaAdmin.html');
+                    break;
+                    case "Mecanico":
+                    $(location).attr('href', 'registroactividades.html');
+                    break;
+                    case "Cliente":
+                    $(location).attr('href', 'vistaUsuario.html');
+                    break;
+            
 
                    
                    
                } 
+            
 
                
            }
+           else{
+                $('#exampleModalError').modal('show');
+           }
+        }
        }) 
        
     })
