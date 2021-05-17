@@ -220,9 +220,16 @@ center {
     .bloqueCategoria {
         text-align: center;
     }
+    .login-container {
+        margin-top: 60%;
+        padding-bottom: 40%;
+    }
+    .login-container {
+        margin-top: 10%;
+        padding-bottom: 40%;
+    }
 }
-
-
+  
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
 @media only screen and (min-width: 600px) {
@@ -246,6 +253,10 @@ center {
     }
     .bloqueCategoria {
         text-align: center;
+    }
+    .login-container {
+        margin-top: 10%;
+        padding-bottom: 40%;
     }
 }
 
@@ -274,6 +285,10 @@ center {
     .bloqueCategoria {
         text-align: center;
     }
+    .login-container {
+        margin-top: 10%;
+        padding-bottom: 40%;
+    }
 }
 
 
@@ -298,6 +313,10 @@ center {
     }
     .bloqueCategoria {
         text-align: center;
+    }
+    .login-container {
+        margin-top: 10%;
+        padding-bottom: 40%;
     }
 }
 
@@ -328,15 +347,17 @@ center {
     .bloqueCategoria {
         text-align: center;
     }
+    .login-container {
+        margin-top: 0px;
+      
+    }
+    
 }
 
 
 /*login*/
 
-.login-container {
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
+
 
 .login-form-1 {
     padding: 5%;
